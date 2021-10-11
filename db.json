@@ -1,9 +1,11 @@
 {
   "users": [
     {
-      "email": "test@mail",
+      "email": "test@mail.ru",
       "pass": "123456",
-      "name": "Sara"
+      "name": "Sara",
+      "surname": "Mantra",
+      "age": "20"
     }
   ]
 }

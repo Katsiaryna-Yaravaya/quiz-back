@@ -4,7 +4,7 @@ const cors = require('cors');
 
 const app = express();
 const jsonParser = express.json();
-const port = 8000;
+const port = 3001;
 
 app.use(cors());
 
@@ -21,7 +21,7 @@ app.post('/add-user', jsonParser, (request, response) => {
   if (!requestedUser) {
     response.status(400).send('Отсутствуют данные о пользователе');
   } else {
-    fs.readFile('./server/db.json', 'utf8', (err, data) => {
+    fs.readFile('db.json', 'utf8', (err, data) => {
       if (err) {
         return response.status(500).send(err);
       } else {
@@ -35,7 +35,7 @@ app.post('/add-user', jsonParser, (request, response) => {
           } else {
             users.push(requestedUser);
             json = JSON.stringify(db, null, 2, '\t');
-            fs.writeFile('./server/db.json', json, 'utf8', (err) => {
+            fs.writeFile('db.json', json, 'utf8', (err) => {
               if (err) {
                 return response.status(500).send(err);
               }
@@ -51,7 +51,7 @@ app.post('/add-user', jsonParser, (request, response) => {
 });
 
 app.get('/users', (request, response) => {
-  fs.readFile('./server/db.json', 'utf8', (err, data) => {
+  fs.readFile('db.json', 'utf8', (err, data) => {
     if (err) {
       return response.status(500).send(err);
     } else {
@@ -68,7 +68,7 @@ app.get('/users', (request, response) => {
 
 app.post('/login', jsonParser, (request, response) => {
   const requestedUser = request.body;
-  fs.readFile('./server/db.json', 'utf8', (err, data) => {
+  fs.readFile('db.json', 'utf8', (err, data) => {
     if (err) {
       return response.status(500).send(err);
     } else {
