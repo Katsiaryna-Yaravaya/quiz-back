@@ -19,7 +19,7 @@ app.post('/add-user', jsonParser, (request, response) => {
   const requestedUser = request.body;
 
   if (!requestedUser) {
-    response.status(400).send('Отсутствуют данные о пользователе');
+    response.status(400).send('Missing user data');
   } else {
     fs.readFile('db.json', 'utf8', (err, data) => {
       if (err) {
@@ -31,7 +31,7 @@ app.post('/add-user', jsonParser, (request, response) => {
           const userExists = users.some((user) => user.email === requestedUser.email);
 
           if (userExists) {
-            return response.status(400).send('Такой пользователь существует');
+            return response.status(400).json('User already exists');
           } else {
             users.push(requestedUser);
             json = JSON.stringify(db, null, 2, '\t');
@@ -81,10 +81,10 @@ app.post('/login', jsonParser, (request, response) => {
           if (user) {
             return response.status(200).send(user);
           } else {
-            return response.status(400).send('Такого пользователя не существует. Пожауйста проверьте еще раз введенные Вами данные!');
+            return response.status(400).send('No such user exists. Please check the data you entered again!');
           }
         } else {
-          return response.status(400).send('Список пользователей пуст');
+          return response.status(400).send('User list is empty');
         }
       } catch (err) {
         return response.status(500).send(err);

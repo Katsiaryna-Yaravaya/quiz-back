@@ -4,8 +4,24 @@
       "email": "test@mail.ru",
       "pass": "123456",
       "name": "Sara",
-      "surname": "Mantra",
+      "surname": "Mantana",
       "age": "20"
+    },
+    {
+      "name": "Kate Budenis",
+      "surname": "",
+      "age": "",
+      "email": "budenis1998@mail.ru",
+      "pass": "",
+      "newPassword": ""
+    },
+    {
+      "name": "Kate Budenis",
+      "surname": "as",
+      "age": "23",
+      "email": "bude@mail.ru",
+      "pass": "grsedgvfdgvb",
+      "repeatPassword": "bvrfdgbvfgb"
     }
   ]
 }
