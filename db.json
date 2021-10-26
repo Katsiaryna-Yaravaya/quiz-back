@@ -6,17 +6,113 @@
       "name": "Sara",
       "surname": "Mantana",
       "age": "20",
-      "userGames": []
+      "userGames": [
+        [
+          {
+            "choseByUser": [
+              "incorrect",
+              "disabled",
+              "disabled",
+              "correct"
+            ],
+            "currentQuestion": {
+              "allAnswers": [
+                "Belgium",
+                "Monaco",
+                "Guatemala",
+                "Nepal"
+              ],
+              "correctAnswer": "Nepal",
+              "capital": "Kathmandu"
+            }
+          }
+        ],
+        [
+          {
+            "choseByUser": [
+              "disabled",
+              "disabled",
+              "disabled",
+              "correct"
+            ],
+            "currentQuestion": {
+              "allAnswers": [
+                "Congo",
+                "Bulgaria",
+                "Ghana",
+                "Singapore"
+              ],
+              "correctAnswer": "Singapore",
+              "capital": "Singapore"
+            }
+          },
+          {
+            "choseByUser": [
+              "disabled",
+              "disabled",
+              "incorrect",
+              "correct"
+            ],
+            "currentQuestion": {
+              "allAnswers": [
+                "Malawi",
+                "Niue",
+                "Saint Kitts and Nevis",
+                "Nepal"
+              ],
+              "correctAnswer": "Nepal",
+              "capital": "Kathmandu"
+            }
+          }
+        ],
+        [
+          {
+            "choseByUser": [
+              "incorrect",
+              "disabled",
+              "disabled",
+              "correct"
+            ],
+            "currentQuestion": {
+              "allAnswers": [
+                "Belgium",
+                "Monaco",
+                "Guatemala",
+                "Nepal"
+              ],
+              "correctAnswer": "Nepal",
+              "capital": "Kathmandu"
+            }
+          }
+        ]
+      ]
     },
     {
-      "name": "Kate Budenis",
-      "surName": "fre",
+      "name": "Kate",
+      "surName": "Redak",
       "age": "43",
       "email": "budenis1998@mail.ru",
       "pass": "qwerty",
       "repeatPassword": "qwerty",
       "userGames": []
     },
-    {}
+    {
+      "name": "Kate ",
+      "surName": "Budenis",
+      "age": "23",
+      "email": "b@mail.ru",
+      "pass": "qwerty",
+      "repeatPassword": "qwerty",
+      "userGames": []
+    },
+    {
+      "name": "Ilya",
+      "surName": "Perlov",
+      "age": "43",
+      "email": "Ilya@mail.ru",
+      "pass": "123456",
+      "repeatPassword": "123456",
+      "userGames": []
+    }
   ]
 }

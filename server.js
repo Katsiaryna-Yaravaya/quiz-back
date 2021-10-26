@@ -60,13 +60,7 @@ app.patch('/users/:email', jsonParser, (request, response) => {
         const users = db.users;
         users.map(item=> {
           if (item.email === request.params.email){
-            if (item.userGames.length === 5) {
-              item.userGames.shift()
               item.userGames.push(request.body)
-            }
-            if (item.userGames.length < 5) {
-              item.userGames.push(request.body)
-            }
           }
         })
         json = JSON.stringify(db, null, 2, '\t');
