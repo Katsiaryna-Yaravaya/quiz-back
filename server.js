@@ -17,7 +17,7 @@ app.listen(port, (err) => {
 
 app.post('/add-user', jsonParser, (request, response) => {
   const requestedUser = request.body;
-
+  console.log(requestedUser)
   if (!requestedUser) {
     response.status(400).send('Missing user data');
   } else {
@@ -49,6 +49,36 @@ app.post('/add-user', jsonParser, (request, response) => {
     });
   }
 });
+
+app.patch('/users/:email', jsonParser, (request, response) => {
+  fs.readFile('db.json', 'utf8', (err, data) => {
+    if (err) {
+      return response.status(500).send(err);
+    } else {
+      try {
+        const db = JSON.parse(data);
+        const users = db.users;
+        users.map(item=> {
+          if (item.email === request.params.email){
+            if (item.userGames.length === 5) {
+              item.userGames.shift()
+              item.userGames.push(request.body)
+            }
+            if (item.userGames.length < 5) {
+              item.userGames.push(request.body)
+            }
+          }
+        })
+        json = JSON.stringify(db, null, 2, '\t');
+        fs.writeFile( "db.json", json, "utf8", function() {
+          response.send({success: true});
+        } );
+      } catch (err) {
+        return response.status(500).send(err);
+      }
+    }
+  })
+})
 
 app.get('/users', (request, response) => {
   fs.readFile('db.json', 'utf8', (err, data) => {

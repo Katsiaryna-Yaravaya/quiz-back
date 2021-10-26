@@ -5,23 +5,18 @@
       "pass": "123456",
       "name": "Sara",
       "surname": "Mantana",
-      "age": "20"
+      "age": "20",
+      "userGames": []
     },
     {
       "name": "Kate Budenis",
-      "surname": "",
-      "age": "",
+      "surName": "fre",
+      "age": "43",
       "email": "budenis1998@mail.ru",
-      "pass": "",
-      "newPassword": ""
+      "pass": "qwerty",
+      "repeatPassword": "qwerty",
+      "userGames": []
     },
-    {
-      "name": "Kate Budenis",
-      "surname": "as",
-      "age": "23",
-      "email": "bude@mail.ru",
-      "pass": "grsedgvfdgvb",
-      "repeatPassword": "bvrfdgbvfgb"
-    }
+    {}
   ]
 }
