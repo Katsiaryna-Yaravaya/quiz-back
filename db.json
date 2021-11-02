@@ -1,6 +1,7 @@
 {
   "users": [
     {
+      "id": 1,
       "email": "test@mail.ru",
       "pass": "123456",
       "name": "Sara",
@@ -9,7 +10,7 @@
       "userGames": [
         [
           {
-            "choseByUser": [
+            "answerState": [
               "incorrect",
               "disabled",
               "disabled",
@@ -29,7 +30,7 @@
         ],
         [
           {
-            "choseByUser": [
+            "answerState": [
               "disabled",
               "disabled",
               "disabled",
@@ -47,7 +48,7 @@
             }
           },
           {
-            "choseByUser": [
+            "answerState": [
               "disabled",
               "disabled",
               "incorrect",
@@ -67,7 +68,7 @@
         ],
         [
           {
-            "choseByUser": [
+            "answerState": [
               "incorrect",
               "disabled",
               "disabled",
@@ -84,19 +85,232 @@
               "capital": "Kathmandu"
             }
           }
+        ],
+        [
+          {
+            "answerState": [
+              "disabled",
+              "disabled",
+              "disabled",
+              "correct"
+            ],
+            "currentQuestion": {
+              "allAnswers": [
+                "Indonesia",
+                "Azerbaijan",
+                "Gabon",
+                "Kenya"
+              ],
+              "correctAnswer": "Kenya",
+              "capital": "Nairobi"
+            }
+          },
+          {
+            "answerState": [
+              "disabled",
+              "correct",
+              "disabled",
+              "disabled"
+            ],
+            "currentQuestion": {
+              "allAnswers": [
+                "Gabon",
+                "Spain",
+                "South Africa",
+                "Maldives"
+              ],
+              "correctAnswer": "Spain",
+              "capital": "Madrid"
+            }
+          },
+          {
+            "answerState": [
+              "disabled",
+              "incorrect",
+              "correct",
+              "disabled"
+            ],
+            "currentQuestion": {
+              "allAnswers": [
+                "Cambodia",
+                "Norfolk Island",
+                "Falkland Islands (Malvinas)",
+                "Saudi Arabia"
+              ],
+              "correctAnswer": "Falkland Islands (Malvinas)",
+              "capital": "Stanley"
+            }
+          }
         ]
       ]
     },
     {
+      "id": 2,
       "name": "Kate",
       "surName": "Redak",
       "age": "43",
       "email": "budenis1998@mail.ru",
       "pass": "qwerty",
       "repeatPassword": "qwerty",
-      "userGames": []
+      "userGames": [
+        [
+          {
+            "answerState": [
+              "disabled",
+              "incorrect",
+              "disabled",
+              "correct"
+            ],
+            "currentQuestion": {
+              "allAnswers": [
+                "Andorra",
+                "Albania",
+                "Saint Helena, Ascension and Tristan da Cunha",
+                "Tunisia"
+              ],
+              "correctAnswer": "Tunisia",
+              "capital": "Tunis"
+            }
+          }
+        ],
+        [
+          {
+            "answerState": [
+              "incorrect",
+              "disabled",
+              "correct",
+              "disabled"
+            ],
+            "currentQuestion": {
+              "allAnswers": [
+                "Albania",
+                "Israel",
+                "Equatorial Guinea",
+                "Iran (Islamic Republic of)"
+              ],
+              "correctAnswer": "Equatorial Guinea",
+              "capital": "Malabo"
+            }
+          }
+        ],
+        [
+          {
+            "answerState": [
+              "incorrect",
+              "disabled",
+              "disabled",
+              "correct"
+            ],
+            "currentQuestion": {
+              "allAnswers": [
+                "Bhutan",
+                "Chile",
+                "United Arab Emirates",
+                "Brazil"
+              ],
+              "correctAnswer": "Brazil",
+              "flag": "https://flagcdn.com/br.svg"
+            }
+          }
+        ],
+        [
+          {
+            "answerState": [
+              "disabled",
+              "disabled",
+              "disabled",
+              "correct"
+            ],
+            "currentQuestion": {
+              "allAnswers": [
+                "Saint Pierre and Miquelon",
+                "Comoros",
+                "Czech Republic",
+                "French Guiana"
+              ],
+              "correctAnswer": "French Guiana",
+              "flag": "https://flagcdn.com/gf.svg"
+            }
+          },
+          {
+            "answerState": [
+              "disabled",
+              "disabled",
+              "disabled",
+              "correct"
+            ],
+            "currentQuestion": {
+              "allAnswers": [
+                "Brazil",
+                "Jamaica",
+                "Palau",
+                "Bangladesh"
+              ],
+              "correctAnswer": "Bangladesh",
+              "flag": "https://flagcdn.com/bd.svg"
+            }
+          },
+          {
+            "answerState": [
+              "incorrect",
+              "disabled",
+              "correct",
+              "disabled"
+            ],
+            "currentQuestion": {
+              "allAnswers": [
+                "Solomon Islands",
+                "Guyana",
+                "Morocco",
+                "Algeria"
+              ],
+              "correctAnswer": "Morocco",
+              "flag": "https://flagcdn.com/ma.svg"
+            }
+          }
+        ],
+        [
+          {
+            "answerState": [
+              "disabled",
+              "disabled",
+              "disabled",
+              "correct"
+            ],
+            "currentQuestion": {
+              "allAnswers": [
+                "Wallis and Futuna",
+                "Panama",
+                "Philippines",
+                "Congo (Democratic Republic of the)"
+              ],
+              "correctAnswer": "Congo (Democratic Republic of the)",
+              "capital": "Kinshasa"
+            }
+          },
+          {
+            "answerState": [
+              "incorrect",
+              "disabled",
+              "disabled",
+              "correct"
+            ],
+            "currentQuestion": {
+              "allAnswers": [
+                "Central African Republic",
+                "Cuba",
+                "Mexico",
+                "Tuvalu"
+              ],
+              "correctAnswer": "Tuvalu",
+              "capital": "Funafuti"
+            }
+          }
+        ]
+      ]
     },
     {
+      "id": 3,
       "name": "Kate ",
       "surName": "Budenis",
       "age": "23",
@@ -106,6 +320,7 @@
       "userGames": []
     },
     {
+      "id": 4,
       "name": "Ilya",
       "surName": "Perlov",
       "age": "43",
@@ -113,6 +328,64 @@
       "pass": "123456",
       "repeatPassword": "123456",
       "userGames": []
+    },
+    {
+      "name": "Sergey",
+      "surName": "Dyatlov",
+      "age": "29",
+      "email": "nosaty@mail.ru",
+      "pass": "test666",
+      "repeatPassword": "test666",
+      "userGames": [],
+      "id": 5
+    },
+    {
+      "name": "Anna",
+      "surName": "Lapenko",
+      "age": "32",
+      "email": "apenko@mail.ru",
+      "pass": "123456",
+      "id": 6,
+      "userGames": [
+        [
+          {
+            "answerState": [
+              "disabled",
+              "disabled",
+              "correct",
+              "disabled"
+            ],
+            "currentQuestion": {
+              "allAnswers": [
+                "Central African Republic",
+                "Finland",
+                "Korea (Democratic People's Republic of)",
+                "Republic of Kosovo"
+              ],
+              "correctAnswer": "Korea (Democratic People's Republic of)",
+              "capital": "Pyongyang"
+            }
+          },
+          {
+            "answerState": [
+              "incorrect",
+              "correct",
+              "disabled",
+              "disabled"
+            ],
+            "currentQuestion": {
+              "allAnswers": [
+                "Monaco",
+                "Guernsey",
+                "Marshall Islands",
+                "Estonia"
+              ],
+              "correctAnswer": "Guernsey",
+              "capital": "St. Peter Port"
+            }
+          }
+        ]
+      ]
     }
   ]
 }
